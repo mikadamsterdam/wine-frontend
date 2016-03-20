@@ -34,7 +34,7 @@ class WineList extends React.Component{
          {this.state.winedatas.map(function(winedata, i) {
             console.log(winedata.id, 'index:' + i)
             return(
-               //<WineItem Key={winedata.id} id={winedata.id} name={winedata.name} description={winedata.description} origin={winedata.origin} createdAt={winedata.created_at} updatedAt={winedata.updated_at} reloadTheWineListAfterDestroy={this.loadTheWineList.bind(this)} />
+               <WineItem Key={winedata.id} id={winedata.id} name={winedata.name} description={winedata.description} origin={winedata.origin} createdAt={winedata.created_at} updatedAt={winedata.updated_at} reloadTheWineListAfterDestroy={this.loadTheWineList.bind(this)} />
             )
          }, this)}
       </div>
