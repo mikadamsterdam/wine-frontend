@@ -22,11 +22,21 @@ class WineItem extends React.Component {
       updatedAt: this.props.updatedAt,
       loading: !!!this.props.id
     });
-
-
-
-
   }
+
+
+    updateName(newName) {
+      console(newName)
+      this.syncState({name:newName})
+    }
+
+    updateDescription(newDescription){
+      console(newDescription)
+      this
+    }
+
+
+
 
 
 
